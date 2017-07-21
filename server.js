@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-app.engine("handlebars", exphbs({defaultLayout: "Main"}));
+app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 var routes = require("./controllers/articleController.js");
