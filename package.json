@@ -1,0 +1,28 @@
+{
+  "name": "newsscraper",
+  "version": "1.0.0",
+  "description": "Node app to scrape news and allow users to comment on the news aricle",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdvacula/NewsScraper.git"
+  },
+  "author": "Matthew Vacula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdvacula/NewsScraper/issues"
+  },
+  "homepage": "https://github.com/mdvacula/NewsScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.3",
+    "request": "^2.81.0",
+    "semantic-ui": "^2.2.11"
+  }
+}

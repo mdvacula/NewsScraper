@@ -1,0 +1,11 @@
+<h1 class="ui header">Ars Technica Articles</h1>
+
+<div class="ui items">
+  {{#each articles}}
+  <div class="item">
+    <div class="content">
+      <a class="header" href={{this.link}}>{{this.title}}</a>
+    </div>
+  </div>
+    {{/each}}
+</div>
