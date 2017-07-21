@@ -25,7 +25,15 @@ var routes = require("./controllers/articleController.js");
 
 app.use("/", routes);
 
-mongoose.connect("mongodb://localhost/newsScraper");
+var databaseUri = 'mongodb://localhost/newsScraper';
+
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+}
+else {
+  mongoose.connect(databaseUri);
+}
+
 
 var db = mongoose.connection;
 
